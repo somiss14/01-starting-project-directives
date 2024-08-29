@@ -1,7 +1,11 @@
 <main>
-  <app-learning-resources />
+  <app-learning-resources/>
 
-  <hr />
+  <hr/>
 
-  <app-auth />
+  <app-auth/>
+  @if (isAdmin()) {
+    <p>Only admins should see.</p>
+  }
+<!--  <p *ngIf="isAdmin()">Only admins should see.</p>-->
 </main>
